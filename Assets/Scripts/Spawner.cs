@@ -29,7 +29,7 @@ public class Spawner : MonoBehaviour
         while (true)
         {
             spawn = Random.Range(0, 2);
-            pos = Random.Range(0, 8);
+            pos = Random.Range(0, 3);
             //Vector3 position = new Vector3(Random.Range(-2,2), Random.Range(1,5), 17);
             GameObject Cube = Instantiate(cube[spawn], spawnPos[pos]);
             Cube.transform.localPosition = Vector3.zero;
